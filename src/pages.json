@@ -3,14 +3,75 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "点餐"
+			}
+		}, 
+		{
+			"path": "pages/eat/eat",
+			"style": {
+				"navigationBarTitleText": "取餐"
+			}
+		}, 
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/youhuiquan/youhuiquan",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "首页",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"enablePullDownRefresh": true,
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color":"#DCDCDC",
+		"selectedColor":"#E50155",
+		"backgroundColor":"#FFFFFF",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon-tab/shouye.png",
+				"selectedIconPath": "static/icon-tab/shouyeed.png"
+			},
+			{
+				"text": "点餐",
+				"pagePath": "pages/order/order",
+				"iconPath": "static/icon-tab/daincan.png",
+				"selectedIconPath": "static/icon-tab/diancaned.png"
+			},
+			{
+				"text": "取餐",
+				"pagePath": "pages/eat/eat",
+				"iconPath": "static/icon-tab/qucan.png",
+				"selectedIconPath": "static/icon-tab/qucaned.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/me/me",
+				"iconPath": "static/icon-tab/wode.png",
+				"selectedIconPath": "static/icon-tab/wodeed.png"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
 	}
 }
