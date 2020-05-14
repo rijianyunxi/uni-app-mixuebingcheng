@@ -26,7 +26,15 @@
 		}
 	    ,{
             "path" : "pages/youhuiquan/youhuiquan",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "优惠券"
+			}
+        }
+        ,{
+            "path" : "pages/chooseShop/chooseShop",
+            "style" : {
+				"navigationBarTitleText": "选择门店"
+			}
         }
     ],
 	"globalStyle": {
