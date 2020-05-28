@@ -1,6 +1,6 @@
 <template>
-	<view>
-		eat
+	<view class="eat">
+		暂未开张，取个锤子餐
 	</view>
 </template>
 
@@ -17,6 +17,11 @@
 	}
 </script>
 
-<style>
-
+<style scoped>
+	.eat{
+		height: 200upx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 </style>
